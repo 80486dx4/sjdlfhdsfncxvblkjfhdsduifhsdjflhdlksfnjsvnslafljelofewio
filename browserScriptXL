@@ -16,7 +16,7 @@ if (window.top !== window.self) {
                 const i = document.createElement("img");
                 i.src = "https://github.com/80486dx4/sjdlfhdsfncxvblkjfhdsduifhsdjflhdlksfnjsvnslafljelofewio/blob/main/preenlandXL.png?raw=true";
                 i.style = "position: absolute;image-rendering: pixelated;width: 24px;height: 42px;";
-                i.style.top = 152 + 'px';
+                i.style.top = 150 + 'px';
                 i.style.left = 484 + 'px';
                 return i;
             })())
