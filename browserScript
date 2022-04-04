@@ -1,0 +1,24 @@
+// ==UserScript==
+// @name         r/Place Greenland
+// @namespace    https://github.com/80486dx4/sjdlfhdsfncxvblkjfhdsduifhsdjflhdlksfnjsvnslafljelofewio
+// @version      1.0.0
+// @description  R/Place Overlay for Greenland
+// @author       someone
+// @match        https://hot-potato.reddit.com/embed*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
+// @grant        none
+// @license      GPL-3.0
+// ==/UserScript==
+if (window.top !== window.self) {
+    window.addEventListener('load', () => {
+        document.getElementsByTagName("mona-lisa-embed")[0].shadowRoot.children[0].getElementsByTagName("mona-lisa-canvas")[0].shadowRoot.children[0].appendChild(
+            (function () {
+                const i = document.createElement("img");
+                i.src = "https://github.com/80486dx4/sjdlfhdsfncxvblkjfhdsduifhsdjflhdlksfnjsvnslafljelofewio/blob/main/placeglLarge2.png?raw=true";
+                i.style = "position: absolute;image-rendering: pixelated;width: 20px;height: 35px;";
+                i.style.top = 152 + 'px';
+                i.style.left = 486 + 'px';
+                return i;
+            })())
+    }, false);
+}
